@@ -1,0 +1,206 @@
+body {
+  background: rgb(21, 18, 54);
+}
+.container {
+  display: flex;
+  margin-top: 20%;
+  margin-left: 40%;
+  margin-right: 5%;
+}
+.diya1,
+.diya2,
+.diya3,
+.diya4,
+.diya5 {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  background: linear-gradient(50deg, red, orange);
+  border-radius: 15% 15% 50% 50%;
+  box-shadow: 0px 5px 10px 0px rgb(85, 69, 40);
+  z-index: 5;
+}
+.diya1 {
+  transform: translateX(70%) translateY(300%);
+}
+.light1,
+.light2,
+.light3,
+.light4,
+.light5 {
+  position: relative;
+  width: 15px;
+  height: 35px;
+  background: linear-gradient(50deg, wheat, orange);
+  border-radius: 50% 50% 50% 50%;
+  box-shadow: 0px 5px 10px 0px rgb(85, 69, 40);
+  z-index: 2;
+  box-shadow: 2px 0px 15px 0px wheat;
+  animation: blink1 1s ease-in infinite;
+}
+.light1 {
+  transform: translateY(210%) translateX(18%);
+}
+.diya2 {
+  background: linear-gradient(50deg, rgb(218, 198, 21), orange);
+  width: 40px;
+  height: 20px;
+  transform: translateY(490%) translateX(120%);
+}
+.diya3 {
+  background: linear-gradient(50deg, rgb(112, 24, 58), rgb(221, 21, 104));
+  width: 40px;
+  height: 20px;
+  transform: translateY(490%) translateX(-350%);
+}
+.diya4 {
+  background: linear-gradient(50deg, rgb(13, 42, 121), rgb(10, 175, 187));
+  width: 40px;
+  height: 20px;
+  transform: translateY(500%) translateX(-1100%);
+}
+.diya5 {
+  background: linear-gradient(50deg, rgb(13, 42, 121), rgb(10, 175, 187));
+  width: 40px;
+  height: 20px;
+  transform: translateY(500%) translateX(300%);
+}
+.light2 {
+  height: 25px;
+  width: 7px;
+  transform: translateY(310%) translateX(120%);
+  animation: blink2 2s ease-in infinite;
+}
+.light3 {
+  height: 25px;
+  width: 7px;
+  transform: translateY(310%) translateX(-2150%);
+  animation: blink3 1.5s ease-in infinite;
+}
+.light4 {
+  height: 20px;
+  width: 7px;
+  transform: translateY(250%) translateX(-6400%);
+}
+.light5 {
+  height: 25px;
+  width: 7px;
+  transform: translateY(320%) translateX(1200%);
+  animation: blink5 1s linear infinite;
+}
+.lamp:nth-child(1),
+.lamp:nth-child(2),
+.lamp:nth-child(3),
+.lamp:nth-child(4),
+.lamp:nth-child(5) {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: tomato;
+  border-radius: 50%;
+  box-shadow: 2px 1px 0px 0px rgb(97, 48, 8);
+  animation: lighting 0.5s linear infinite;
+}
+.lamp:nth-child(1) {
+  transform: translateX(-3500%) translateY(1800%);
+}
+.lamp:nth-child(2) {
+  transform: translateX(-2500%) translateY(1800%);
+}
+.lamp:nth-child(3) {
+  transform: translateX(-1200%) translateY(1650%);
+}
+
+.colorLamp:nth-child(1),
+.colorLamp:nth-child(2),
+.colorLamp:nth-child(3) {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: tomato;
+  border-radius: 50%;
+  box-shadow: 2px 1px 0px 0px rgb(97, 48, 8);
+  animation: colorlighting 1s ease-in-out infinite;
+}
+.colorLamp:nth-child(1) {
+  transform: translateX(-3200%) translateY(1800%);
+}
+.colorLamp:nth-child(2) {
+  transform: translateX(-2200%) translateY(1800%);
+}
+.colorLamp:nth-child(3) {
+  transform: translateX(-800%) translateY(1650%);
+}
+.colorLamp:nth-child(4) {
+  transform: translateX(-200%) translateY(1800%);
+}
+
+@keyframes lighting {
+  0% {
+    background: turquoise;
+    box-shadow: whitesmoke;
+  }
+  50% {
+    background: rgb(216, 224, 92);
+    box-shadow: rgb(221, 198, 68);
+  }
+  100% {
+    background: rgb(247, 128, 30);
+    box-shadow: rgb(197, 64, 23);
+  }
+}
+h4 {
+  font-family: cursive;
+  font-size: xx-large;
+  color: rgb(216, 184, 5);
+  transform: translateX(-165%) translateY(-150%);
+}
+h3 {
+  font-family: cursive;
+  text-align: center;
+  padding:45px;
+  font-size: xx-large;
+  color: rgb(216, 184, 5);
+  transform: translateX(-165%) translateY(-70%
+}
+
+
+@keyframes blink1 {
+  0% {
+    height: 30px;
+  }
+  100% {
+    height: 32px;
+  }
+}
+@keyframes blink2 {
+  0% {
+    box-shadow: 2px -5px 15px 0px wheat;
+  }
+  100% {
+    box-shadow: 5px 10px 15px 0px wheat;
+  }
+}
+@keyframes blink3 {
+  0% {
+    box-shadow: 3px -10px 15px 0px wheat;
+  }
+  100% {
+    box-shadow: 5px 10px 30px 0px wheat;
+  }
+}
+
+@keyframes colorlighting {
+  0% {
+    background: rgb(30, 184, 24);
+    box-shadow: rgb(221, 198, 68);
+  }
+  50% {
+    background: rgb(216, 12, 5);
+    box-shadow: rgb(197, 64, 23);
+  }
+  100% {
+    background: rgb(145, 46, 145);
+    box-shadow: rgb(163, 10, 177);
+  }
+}
